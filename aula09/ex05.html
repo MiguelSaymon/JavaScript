@@ -27,9 +27,13 @@
     <h1>Iniciando os primeiros passos com o DOM</h1>
     <p>Aqui está o resultado</p>
     <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
-
+        var m = document.getElementById('msg')
+        var p = document.getElementsByTagName('p')[1]
+        window.document.write(p.innerHTML)
+        m.style.background = 'lightyellow'
+        m.style.borderRadius = '10px'
     </script>
 </body>
 </html>
