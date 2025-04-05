@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Detran</h1>
+    <p>Sistema de multas</p>
+        <input type="number" id="txtvel" placeholder="Velocidade">
+        <input type="button" value="Confirmar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var velocidade = document.getElementById('txtvel')
+            var vel = Number(velocidade.value)
+            var resultado = document.getElementById('res')
+            resultado.innerHTML=`<p>A sua velocidade atual é de ${vel} Km/h<p/>`
+            
+            if (vel <=50) {
+                resultado.innerHTML += `<p> Você não tomará uma multa <p/>`
+                } else {
+                    resultado.innerHTML += `<p> Você tomará uma multa <p/>`
+            }
+
+            
+        }
+    </script>
+</body>
+</html>
