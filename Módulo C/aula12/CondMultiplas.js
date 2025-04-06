@@ -12,10 +12,10 @@ dias_semana = semana.getDay()
     6 = Sábado 
 */
 
-switch (dias_semana) {
+switch (dias_semana) { // Condições Múltiplas
     case 0 :
         console.log('Domingo')
-    break
+    break // NÃO ESQUECER O BREAK
 
     case 1 :
         console.log('Segunda')
@@ -39,5 +39,9 @@ switch (dias_semana) {
 
     case 6 :
         console.log('Sábado')
+    break
+
+    default :
+        console.log('[ERRO]')
     break
 }
