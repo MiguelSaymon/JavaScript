@@ -1,0 +1,63 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(45, 154, 243);
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#ini {
+    margin: 10px;
+}
+
+#fim {
+    margin: 10px;
+}
+
+#passo {
+    margin: 10px;
+}
+
+#button {
+    margin: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+#button:hover {
+    text-decoration: underline;
+    color: rgb(45, 154, 243);
+}
+
+#resultado {
+    padding: 10px;
+}
+
+footer {
+    margin: 10px;
+    text-align: center;
+}
